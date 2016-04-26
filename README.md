@@ -1,5 +1,5 @@
 # roman-to-dec
->  Convert a roman numeral to a base-10 integer.
+> Convert a roman numeral to a base-10 integer.
 
 ## Installation
 ```shell

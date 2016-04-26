@@ -1,20 +1,13 @@
 'use strict';
 
 exports = module.exports = function rtd(roman) {
-  roman = (roman || 'nulla').toLowerCase();
-
-  // Return 0 if latin "nulla" is passed in.
-  if (roman === 'nulla') {
+  if (!roman || roman === 'nulla') {
     return 0;
   }
 
-  // Convert each numeral to a base-10 numer:
-  var rep = roman.split('').map(function map(numeral) {
+  return roman.toLowerCase().split('').map(function map(numeral) {
     return exports.numerals[numeral] || 0;
-  });
-
-  // Use a numeral decoding scheme:
-  return rep.reduce(function decode(prev, cur, i, n) {
+  }).reduce(function decode(prev, cur, i, n) {
     var next = n[i + 1] || 0;
     return cur < next ? prev - cur : prev + cur;
   }, 0);
