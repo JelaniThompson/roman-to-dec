@@ -1,17 +1,8 @@
 'use strict';
 
-exports = module.exports = function rtd(roman) {
-  if (!roman || roman === 'nulla') {
-    return 0;
-  }
-
-  return roman.toLowerCase().split('').map(function map(numeral) {
-    return exports.numerals[numeral] || 0;
-  }).reduce(function decode(prev, cur, i, n) {
-    var next = n[i + 1] || 0;
-    return cur < next ? prev - cur : prev + cur;
-  }, 0);
-};
+module.exports = exports = r => r.toLowerCase().split('')
+.map(n => exports.numerals[n] || 0)
+.reduce((p, c, i, n) => c < n[i + 1] ? p - c : p + c, 0);
 
 exports.numerals = {
   i: 1,
