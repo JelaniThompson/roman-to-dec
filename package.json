@@ -2,7 +2,7 @@
   "name": "roman-to-dec",
   "author": "Jamen Marzonie",
   "version": "0.0.0",
-  "description": "A roman numeral to base-10 integer converter.",
+  "description": "Convert a roman numeral to a base-10 integer.",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -1,20 +1,26 @@
 # roman-to-dec
-> A roman numeral to base-10 integer converter.
+>  Convert a roman numeral to a base-10 integer.
 
 ## Installation
 ```shell
-$ npm install jamen/roman-to-dec
+$ npm install --save jamen/roman-to-dec
 ```
 
 ## Usage
 ```javascript
-import roman-to-dec from 'roman-to-dec';
+var rtd = require('roman-to-dec');
+
+exports('MDCC');
+// => 1700
 ```
 
 ## Credits
 | ![jamen][avatar] |
 |:---:|
 | [Jamen Marzonie][github] |
+
+## License
+MIT &copy; Jamen Marzonie
 
   [avatar]: https://avatars.githubusercontent.com/u/6251703?v=3&s=125
   [github]: https://github.com/jamen
