@@ -1,0 +1,22 @@
+{
+  "name": "roman-to-dec",
+  "author": "Jamen Marzonie",
+  "version": "0.0.0",
+  "description": "A roman numeral to base-10 integer converter.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamen/roman-to-dec"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "private": true,
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "eslint-config-google": "^0.5.0"
+  }
+}
